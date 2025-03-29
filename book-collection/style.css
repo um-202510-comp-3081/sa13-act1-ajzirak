@@ -1,0 +1,76 @@
+/* General reset & body styling */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header styling */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #333;
+  border-bottom: 3px solid #aaa;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+/* Grid layout for books */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+/* Individual book styling */
+.book {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.book:hover {
+  transform: scale(1.03);
+}
+
+/* Book images */
+.book img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Book titles */
+.book h2 {
+  font-size: 1.3em;
+  color: #222;
+  margin: 10px 0 5px;
+}
+
+/* Author text */
+.book p {
+  color: #666;
+  font-size: 0.95em;
+}
+
+/* Category colors */
+.mystery {
+  border-top: 6px solid #6b5b95; /* Purple */
+}
+
+.horror {
+  border-top: 6px solid #d64161; /* Red */
+}
+
+.fantasy {
+  border-top: 6px solid #feb236; /* Orange */
+}
